@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        /*
+        flex, grid and media queries 
+        flex which will works hybrid apps web and we areconverting mobile
+        grid 2- dimensional data 
+        media queries - rwd 
+        */
+        /*.flex-container {
+            display: flex;
+        }
+        .flex-container > div {
+            margin: 10px;
+            background-color: red; 
+
+        }*/
+        /*.grid-container {
+            display: grid;
+            -ms-display: grid;
+            grid-template-columns: auto auto auto;
+             /* grid-column-gap: 81px; 
+             grid-row-gap: 50px;
+
+        }
+        .grid-container > div :nth-of-type(1) {
+            -ms-template-column-width: auto;
+            -moz-columns: auto;
+        }
+        .grid-container > div {
+            border: 10px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            background-color: red;
+        }*/
+        /*#ui-2019 {
+            color: red !important;
+        }
+        .ui-2019 {
+            color: green;
+        }
+        div {
+            color: blue;
+        }
+        #ui-2019 {
+            color: yellow;
+        }*/
+        /*
+        specificity
+        id > class > tag > universal selector(*)
+        inline > internal > external 
+        */
+        /*.grid-container {
+            background: red;
+        }
+        .grid-container {
+            background: green;
+        }*/
+        @media screen and (min-width: 480px) {
+            .grid-container {
+                background-color: red;
+            }
+        }
+        @media screen and (min-width: 960px) {
+            .grid-container {
+                background-color: green;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="ui-2019" id="ui-2019"> Praveen</div>
+      <div class="grid-container">
+           <div>1</div>
+           <div>2</div>
+           <div>3</div>
+           <div>1</div>
+           <div>2</div>
+           <div>3</div>
+      </div>
+    </body>
+</html>
